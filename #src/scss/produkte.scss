@@ -1,0 +1,159 @@
+.produkte{
+	margin-bottom: 250px;
+	.wrapper{
+		position: relative;
+		flex-wrap: wrap;
+		width: 1196px;
+		position: relative;
+	}
+	.main-title{
+		width: 100%;
+		margin-bottom: 124px;
+	}
+
+	.equitron-pro{
+		width: 100%;
+		display: flex;
+    margin-bottom: 169px;
+    position: relative;
+		img{
+			margin-left: -169px;
+			margin-top: -78px;
+		}
+		.line-wrapper{
+			left: 375px;
+    	top: 12px;
+		}
+	}
+
+	h4{
+		font-family: $font-pier-sans;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 30px;
+		text-transform: lowercase;
+		color: $blue;
+		margin-top: -5px;
+		margin-bottom: 33px;
+	}
+	ul{
+		list-style: disc;
+		padding: 0;
+		padding-left: 21px;
+		margin: 0;
+		margin-bottom: 47px;
+	}
+	li{
+		font-family: $font-avenir;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 18px;
+		text-transform: lowercase;
+		color: $black;
+		margin-bottom: 18px;
+	}
+	.main-btn{
+		width: 180px;
+	}
+
+	.equitron-pro--mobile{
+		position: relative;
+		.line-wrapper{
+			left: 301px;
+			top: 13px;
+			span:first-child{
+				order: 2;
+			}
+			span:last-child{
+				order: 1;
+			}
+		}
+		img{
+			position: absolute;
+			right: -140px;
+			top: -173px;
+			z-index: -1;
+		}
+		ul{
+			margin-bottom: 54px;
+		}
+	}
+	.dot-wrapper--right{
+		bottom: unset;
+		right: -142px;
+		top: -23px;
+	}
+
+	// media web produkte
+	@media screen and (max-width: 1600px){
+		.wrapper{
+			width: 1280px;
+			justify-content: space-around;
+		}
+	}
+	// media tablet produkte
+	@media screen and (max-width: 1279px){
+		.wrapper{
+			width: 768px;
+			flex-wrap: wrap;
+		}
+		.equitron-pro{
+			flex-wrap: wrap;
+			justify-content: center;
+			&--mobile{
+				flex-wrap: wrap;
+			}
+			img{
+				margin: 0;
+				position: static;
+			}
+			h4{
+				text-align: center;
+			}
+		}
+		.line-wrapper{
+			display: none;
+		}
+		.main-btn{
+			margin: 0 auto;
+		}
+		.elips{
+	    left: -1136px;
+		}
+		&{
+			margin-bottom: 0;
+		}
+	}
+
+	// media mobile produkte
+	@media screen and (max-width: 767px){
+		.wrapper{
+			width: 360px;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.main-title{
+			margin-bottom: 50px;
+			h2{
+				font-size: 50px;
+				line-height: 64px;
+			}
+		}
+		img{
+			width: 100%;
+		}
+		.equitron-pro{
+			margin-bottom: 50px;
+		}
+		.elips{
+			left: -1195px;
+		}
+
+	}
+
+
+}

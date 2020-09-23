@@ -1,0 +1,64 @@
+// PierSans regular
+@font-face{
+	font-family: "PierSans";
+	src : url("../fonts//PierSans/PierSans-Regular400.woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+// PierSans Bold
+@font-face{
+	font-family: "PierSans";
+	src : url("../PierSans/fonts/PierSans-Bold700.woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+// PierSans black
+@font-face{
+	font-family: "PierSans";
+	src : url("../fonts/PierSans/PierSans-Black.woff");
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+// PierSans regular italic
+@font-face{
+	font-family: "PierSans";
+	src : url("../fonts/PierSans/PierSans-BlackItalic.woff");
+	font-weight: 400;
+	font-style: italic;
+}
+
+// PierSans Bold italic
+@font-face{
+	font-family: "PierSans";
+	src : url("../fonts/PierSans/PierSansBoldItalic700.woff");
+	font-weight: 700;
+	font-style: italic;
+}
+
+// PierSans black italic
+@font-face{
+	font-family: "PierSans";
+	src : url("../fonts/PierSans/PierSans-BlackItalic.woff");
+	font-weight: black;
+	font-style: italic;
+}
+
+// Avenir medium
+@font-face{
+	font-family: "Avenir";
+	src : url("../fonts/Avenir/Avenir-Medium.woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+// Avenir Heavy
+@font-face{
+	font-family: "Avenir";
+	src : url("../fonts/Avenir/Avenir-Heavy.woff");
+	font-weight: 900;
+	font-style: normal;
+}

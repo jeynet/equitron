@@ -1,0 +1,140 @@
+.technologie1{
+	margin-bottom: 156px;
+	.wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		width: 1196px;
+		align-self: baseline;
+	}
+
+	.left{
+		width: 590px;
+	}
+	.right{
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: -80px;
+    margin-right: -49px;
+	}
+	.main-title{
+		margin-bottom: 38px;
+		h2{
+			margin-bottom: 32px;
+		}
+		span{
+			width: auto;
+			text-transform: unset;
+		}
+	}
+	p{
+		font-family: $font-avenir;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: capitalize;
+		color: #000;
+		width: 561px;
+	}
+	ul{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+		margin-top: 6px;
+	}
+	li{
+		width: 354px;
+		display: flex;
+		box-sizing: border-box;
+		padding-left: 30px;
+
+		position: relative;
+		span{
+			font-family: $font-avenir;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 25px;
+			color: $black;
+		}
+		.icon{
+			position: absolute;
+			left: 0;
+			top: 10px;
+		}
+	}
+	li:first-child span{
+		width: 309px;
+	}
+	li:last-child span{
+		width: 362px;
+	}
+
+	// media web technologie1
+	@media screen and (max-width: 1600px){
+		.wrapper{
+			width: 1280px;
+			justify-content: space-around;
+		}
+		.right{
+			margin-right: 0;
+		}
+	} 
+	// media tablet technologie1
+	@media screen and (max-width: 1279px){
+		.wrapper{
+			width: 768px;
+			flex-wrap: wrap;
+		}
+		.right{
+			margin: 0;
+		}
+		p{
+			width: 100%;
+			text-align: center;
+		}
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		li{
+			margin-bottom: 25px;
+		}
+	}
+
+	// media mobile technologie1
+	@media screen and (max-width: 767px){
+		&{
+			margin-bottom: 50px;
+		}
+		.wrapper{
+			width: 360px;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.main-title{
+			h2{
+				font-size: 50px;
+				line-height: 64px;
+			}
+		}
+		.right{
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+
+		li{
+			width: 320px;
+		}
+	}
+
+
+
+}

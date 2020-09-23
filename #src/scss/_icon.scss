@@ -1,0 +1,75 @@
+.icon{
+	display: block;
+}
+
+.icon-tw{
+	width: 15px;
+	height: 13px;
+	background-image: url('../img/icon/tw.svg');
+}
+.icon-in{
+	width: 14.2px;
+	height: 13.57px;
+	background-image: url('../img/icon/link.svg');
+}
+.icon-youtube{
+	height: 14.4375px;
+	width: 21px;
+	background-image: url('../img/icon/youtube.svg');
+}
+
+
+.icon-fire{
+	width: 76px;
+	height: 76px;
+	background-image: url('../img/icon/fire.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-dna{
+	width: 76px;
+	height: 76px;
+	background-image: url('../img/icon/dna.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-msucle{
+	width: 76px;
+	height: 76px;
+	background-image: url('../img/icon/msucle.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-secur{
+	width: 76px;
+	height: 76px;
+	background-image: url('../img/icon/secur.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.icon-st{
+	width: 10px;
+	height: 2px;
+	background-color: $blue;
+}
+
+.icon-arrow{
+	width: 27px;
+	height: 22px;
+	background-image: url('../img/icon/arrow-black.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-select{
+	width: 10px;
+	height: 10px;
+	background-image: url('../img/icon/arrow-select.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+}

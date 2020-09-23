@@ -1,0 +1,86 @@
+.erfahrene-tierärzte{
+	margin-bottom: 225px;
+	.wrapper{
+		width: 1234px;
+		justify-content: space-between;
+		position: relative;
+	}
+	.main-title{
+		width: 400px;
+		h2{
+			text-transform: capitalize;
+		}
+	}
+	.right{
+		margin-right: -122px;
+    margin-top: 14px;
+	}
+
+	.elips{
+		width: 789px;
+		height: 789px;
+		left: unset;
+    right: -619px;
+    top: -360px;
+	}
+
+	.dot-wrapper{
+		left: -271px;
+	  top: 330px;
+	}
+
+	// media web erfahrene-tierärzte
+	@media screen and (max-width: 1600px){
+		.wrapper{
+			width: 1280px;
+			justify-content: space-around;
+		}
+	} 
+	// media tablet erfahrene-tierärzte
+	@media screen and (max-width: 1279px){
+		.wrapper{
+			width: 768px;
+			flex-wrap: wrap;
+		}
+		.main-title{
+			width: 100%;
+			text-align: center;
+		}
+		.right{
+			margin-right: 0;
+		}
+		&{
+			margin-bottom: 100px;
+		}
+	}
+
+	// media mobile erfahrene-tierärzte
+	@media screen and (max-width: 767px){
+		&{
+			margin-bottom: 50px;
+		}
+		.wrapper{
+			width: 360px;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.main-title{
+			margin: 0;
+			margin-bottom: 30px;
+			h2{
+				font-size: 50px;
+				line-height: 64px;
+			}
+			span{
+				width: 100%;
+			}
+		}
+		.right{
+			width: 100%;
+			margin-top: 0;
+		}
+	}
+
+}

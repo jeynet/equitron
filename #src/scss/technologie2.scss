@@ -1,0 +1,299 @@
+.technologie2{
+	// background-image: url('../img/hors.png');
+	// min-height: 1514px;
+  // background-position-x: center;
+  // background-position-y: 184px;
+  // background-repeat: no-repeat;
+  margin-bottom: 245px;
+	.wrapper{
+		width: 1214px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		position: relative;
+		z-index: 2;
+	}
+	.main-title{
+		margin-left: 13px;
+		h2{
+			margin-bottom: 27px;
+		}
+		span{
+    	width: 603px;
+    	text-transform: unset;
+		}
+	}
+	p{
+		font-family: $font-avenir;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: capitalize;
+		
+	}
+	p:first-child{
+		margin-bottom: 26px;
+	}
+	&__text-wrapper{
+		width: 466px;
+		margin-top: 13px;
+    // margin-right: -113px;
+	}
+
+	&__img-wrapper{
+		width: 1920px;
+		margin: 0 auto;
+		position: relative;
+		margin-top: -59px;
+		// z-index: -1;
+		img{
+			width: 100%;
+		}
+	}
+
+	.plus:first-child{
+		top: 423px;
+    left: 604px;
+	}
+
+	.plus:nth-child(2){
+		top: 445px;
+		left: 959px;
+	}
+
+	.plus:nth-child(3){
+		top: 438px;
+		left: 1173px;
+	}
+
+	.plus:nth-child(4){
+		top: 563px;
+		left: 711px;
+	}
+
+	.plus:nth-child(5){
+		top: 678px;
+		left: unset;
+		right: 620px;
+	}
+
+	.plus:nth-child(6){
+		top: 909px;
+		left: 625px;
+	}
+
+	.plus:nth-child(7){
+		top: 945px;
+		left: 775px;
+	}
+
+	.plus:nth-child(8){
+		top: 958px;
+		left: unset;
+		right: 554px;
+	}
+
+	.plus:nth-child(9){
+		top: 1012px;
+		left: unset;
+		right: 320px;
+	}
+
+	@media screen and (max-width: 1919px){
+		&__img-wrapper{
+			width: 1500px;
+		}
+
+		.plus:first-child{
+			top: 343px;
+			left: 483px;
+		}
+
+		.plus:nth-child(2){
+			top: 339px;
+			left: 726px;
+		}
+
+		.plus:nth-child(3){
+			top: 320px;
+			left: 929px;
+		}
+
+		.plus:nth-child(4){
+			top: 453px;
+	    left: 567px;
+		}
+
+		.plus:nth-child(5){
+			top: 484px;
+			left: unset;
+			right: 483px;
+		}
+
+		.plus:nth-child(6){
+			top: 713px;
+	    left: 475px;
+		}
+
+		.plus:nth-child(7){
+			top: 734px;
+			left: 595px;
+		}
+
+		.plus:nth-child(8){
+			top: 745px;
+			left: unset;
+			right: 419px;
+		}
+
+		.plus:nth-child(9){
+			top: 772px;
+			left: unset;
+			right: 258px;
+		}
+	}
+
+	// media web technologie2
+	@media screen and (max-width: 1600px){
+		.wrapper{
+			width: 1280px;
+			justify-content: space-around;
+		}
+		&__img-wrapper{
+			width: 1280px;
+		}
+		.plus:first-child{
+			top: 287px;
+			left: 406px;
+		}
+
+		.plus:nth-child(2){
+			top: 287px;
+			left: 611px;
+		}
+
+		.plus:nth-child(3){
+			top: 275px;
+			left: 790px;
+		}
+
+		.plus:nth-child(4){
+			top: 389px;
+			left: 471px;
+		}
+
+		.plus:nth-child(5){
+			top: 381px;
+			left: unset;
+			right: 401px;
+		}
+
+		.plus:nth-child(6){
+			top: 625px;
+	    left: 398px;
+		}
+
+		.plus:nth-child(7){
+			top: 625px;
+	    left: 495px;
+		}
+
+		.plus:nth-child(8){
+			top: 618px;
+			left: unset;
+			right: 353px;
+		}
+
+		.plus:nth-child(9){
+			top: 644px;
+	    left: unset;
+	    right: 236px;
+		}
+	} 
+
+	// media tablet technologie2
+	@media screen and (max-width: 1279px){
+		.wrapper{
+			width: 768px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__text-wrapper{
+			margin-right: 0;
+			margin-top: 25px;
+			text-align: center;
+		}
+		&__img-wrapper{
+			width: 768px;
+		}
+
+		.plus:first-child{
+			top: 164px;
+	    left: 232px;
+		}
+		.plus:nth-child(2){
+			top: 164px;
+      left: 365px;
+		}
+		.plus:nth-child(3){
+			top: 164px;
+    	left: 465px;
+		}
+		.plus:nth-child(4){
+	    top: 234px;
+	    left: 269px;
+		}
+		.plus:nth-child(5){
+	    top: 234px;
+			left: unset;
+	    right: 243px;
+		}
+		.plus:nth-child(6){
+			top: 376px;
+	    left: 239px;
+		}
+		.plus:nth-child(7){
+			top: 376px;
+			left: 304px;
+		}
+		.plus:nth-child(8){
+			top: 376px;
+			left: unset;
+	    right: 218px;
+		}
+		.plus:nth-child(9){
+			top: 376px;
+			left: unset;
+    	right: 142px;
+		}
+	}
+
+	// media mobile technologie2
+	@media screen and (max-width: 767px){
+		&{
+			margin-bottom: 50px;
+		}
+		.wrapper{
+			width: 360px;
+			flex-wrap: wrap;
+			box-sizing: border-box;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.main-title{
+			margin: 0;
+			h2{
+				font-size: 50px;
+				line-height: 64px;
+			}
+			span{
+				width: 100%;
+			}
+		}
+		&__img-wrapper{
+			width: 360px;
+			display: none;
+		}
+	}
+	
+}

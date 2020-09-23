@@ -1,0 +1,114 @@
+.anwendungen{
+	margin-bottom: 253px;
+	.wrapper{
+		width: 1626px;
+		background-color: $light-blue;
+		flex-wrap: wrap;
+		justify-content: center;
+		border-radius: 10px;
+	}
+	.main-title{
+		width: 100%;
+		margin-top: 132px;
+		margin-bottom: 76px;
+	}
+	h2{
+		text-align: center;
+	}
+	ul{
+		display: flex;
+		justify-content: space-between;
+		width: 1221px;
+		padding: 0;
+		margin-bottom: 163px;
+	}
+	li{
+		width: 190px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	li:last-child{
+		margin-right: 12px;
+	}
+	.icon{
+		margin-bottom: 25px;
+	}
+	h3{
+		font-family: $font-pier-sans;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		text-transform: capitalize;
+		color: $blue;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+	p{
+		font-family: $font-avenir;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		text-transform: lowercase;
+	}
+
+	// media web anwendungen
+	@media screen and (max-width: 1600px){
+		.wrapper{
+			width: 1280px;
+			justify-content: space-around;
+		}
+	}
+	// media tablet anwendungen
+	@media screen and (max-width: 1279px){
+		.wrapper{
+			width: 768px;
+			flex-wrap: wrap;
+		}
+		ul{
+			flex-wrap: wrap;
+		}
+		li{
+			width: 45%;
+			margin-bottom: 25px;
+		}
+	}
+	// media mobile anwendungen
+	@media screen and (max-width: 767px){
+		&{
+			margin-bottom: 50px;
+		}
+		.wrapper{
+			width: 360px;
+		}
+		.main-title{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		ul{
+			margin: 0;
+			justify-content: center;
+		}
+		li{
+			margin: 0 !important;
+			margin-bottom: 25px !important;
+			width: 60%;
+		}
+		.icon{
+			margin-bottom: 15px;
+		}
+		h3{
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 12px;
+		}
+
+	}
+}
