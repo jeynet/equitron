@@ -3284,6 +3284,11 @@ body {
     width: 460px;
   }
 
+  .anwendungen .main-title h2 {
+    font-size: 48px;
+    line-height: 68px;
+  }
+
   .technologie1 .wrapper {
     width: 480px;
   }
