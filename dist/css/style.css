@@ -98,18 +98,48 @@ body {
   width: 15px;
   height: 13px;
   background-image: url("../img/icon/tw.svg");
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+.icon-tw:hover {
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+  background-image: url("../img/icon/tw-active.svg");
 }
 
 .icon-in {
   width: 14.2px;
   height: 13.57px;
   background-image: url("../img/icon/link.svg");
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+.icon-in:hover {
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+  background-image: url("../img/icon/link-active.svg");
 }
 
 .icon-youtube {
   height: 14.4375px;
   width: 21px;
   background-image: url("../img/icon/youtube.svg");
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+
+.icon-youtube:hover {
+  -webkit-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+  background-image: url("../img/icon/youtube-active.svg");
 }
 
 .icon-fire {
@@ -283,9 +313,12 @@ body {
 .custom-select {
   width: 289px;
   border-bottom: 1px solid #000000;
-  min-height: 50px;
   margin-bottom: 31px;
   position: relative;
+  height: 50px;
+  -webkit-transition: height 250ms ease;
+  -o-transition: height 250ms ease;
+  transition: height 250ms ease;
 }
 
 .custom-select .custom-select__text {
@@ -309,6 +342,7 @@ body {
           box-sizing: border-box;
   position: relative;
   z-index: 2;
+  height: 50px;
 }
 
 .custom-select__body {
@@ -320,6 +354,7 @@ body {
       flex-wrap: wrap;
   overflow-y: hidden;
   position: relative;
+  top: -25px;
   z-index: 1;
   -webkit-transition: height 300ms ease;
   -o-transition: height 300ms ease;
@@ -340,7 +375,7 @@ body {
 }
 
 .custom-select__item--first:hover {
-  color: #333637;
+  color: #1F1F1F;
 }
 
 .custom-select .icon-select {
@@ -378,6 +413,17 @@ body {
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.main-btn:hover {
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  background-color: #333637;
+  border-color: #333637;
 }
 
 .main-title h2 {
@@ -817,6 +863,10 @@ body {
   line-height: 25px;
   color: #fff;
   text-decoration: none;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
 }
 
 .main-nav__exit-mobile-menu {
@@ -1713,6 +1763,10 @@ body {
 @media screen and (max-width: 1600px) {
   .wrapper {
     width: 1280px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1739,10 +1793,17 @@ body {
 
   .header .soc-wrapper {
     margin-top: 0;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
   }
 
   .header .main-nav {
     padding-top: 0;
+    width: 600px;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
   }
 
   .first-display .wrapper {
@@ -1777,6 +1838,10 @@ body {
     width: 1280px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .produkte .equitron-pro--mobile .line-wrapper span:last-child {
+    width: 422px;
   }
 
   .technologie2 .wrapper {
@@ -1867,18 +1932,10 @@ body {
 
 @media screen and (max-width: 1279px) {
   .wrapper {
-    width: 768px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .main-title {
-    text-align: center;
-    margin-bottom: 25px;
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .soc-wrapper {
@@ -1945,12 +2002,677 @@ body {
   }
 
   .top-section {
-    background-size: cover;
     margin-bottom: 50px;
   }
 
   .first-display .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .first-display .left {
+    width: 500px;
+  }
+
+  .first-display h1 {
+    font-size: 60px;
+    line-height: 78px;
+  }
+
+  .features .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .features .main-title h2 {
+    width: 100%;
+  }
+
+  .features .main-title span {
+    width: 100%;
+  }
+
+  .features .left {
+    width: 550px;
+  }
+
+  .features .right {
+    width: 400px;
+  }
+
+  .anwendungen .wrapper {
+    width: 1000px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .technologie1 .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .technologie1 .left {
+    width: 500px;
+  }
+
+  .technologie1 .right {
+    width: 450px;
+    margin: 0;
+  }
+
+  .technologie1 p {
+    width: 100%;
+  }
+
+  .technologie1 img {
+    width: 100%;
+  }
+
+  .produkte .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .produkte .equitron-pro--mobile .line-wrapper span:last-child {
+    width: 170px;
+  }
+
+  .technologie2 .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .technologie2 .main-title {
+    width: 45%;
+    margin-left: 0;
+  }
+
+  .technologie2 .main-title span {
+    width: 100%;
+  }
+
+  .technologie2__text-wrapper {
+    width: 45%;
+  }
+
+  .technologie2__img-wrapper {
+    width: 1000px;
+  }
+
+  .technologie2 .plus:first-child {
+    top: 253px;
+    left: 320px;
+  }
+
+  .technologie2 .plus:nth-child(2) {
+    top: 226px;
+    left: 459px;
+  }
+
+  .technologie2 .plus:nth-child(3) {
+    top: 222px;
+    left: 616px;
+  }
+
+  .technologie2 .plus:nth-child(4) {
+    top: 311px;
+    left: 377px;
+  }
+
+  .technologie2 .plus:nth-child(5) {
+    top: 306px;
+    left: unset;
+    right: 311px;
+  }
+
+  .technologie2 .plus:nth-child(6) {
+    top: 498px;
+    left: 312px;
+  }
+
+  .technologie2 .plus:nth-child(7) {
+    top: 497px;
+    left: 402px;
+  }
+
+  .technologie2 .plus:nth-child(8) {
+    top: 519px;
+    left: unset;
+    right: 301px;
+  }
+
+  .technologie2 .plus:nth-child(9) {
+    top: 505px;
+    left: unset;
+    right: 187px;
+  }
+
+  .erfahrene-tierärzte .wrapper {
     width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .erfahrene-tierärzte .main-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .erfahrene-tierärzte .right {
+    margin-right: 0;
+  }
+
+  .erfahrene-tierärzte {
+    margin-bottom: 100px;
+  }
+
+  .technologie-baner .wrapper {
+    width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .technologie-baner .main-title {
+    margin-bottom: 50px;
+  }
+
+  .technologie-baner {
+    margin-bottom: 100px;
+  }
+
+  .technologie-baner .main-title h2 {
+    font-size: 48px;
+    line-height: 68px;
+  }
+
+  .kontaktiere-uns .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .kontaktiere-uns .main-title {
+    width: 400px;
+  }
+
+  .kontaktiere-uns .main-title span {
+    width: 100%;
+  }
+
+  .kontaktiere-uns .right {
+    margin-bottom: 100px;
+  }
+
+  .footer .wrapper {
+    width: 1024px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .footer .main-nav {
+    width: 570px;
+    -webkit-box-ordinal-group: unset;
+        -ms-flex-order: unset;
+            order: unset;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    width: 920px;
+  }
+
+  .first-display .wrapper {
+    width: 920px;
+  }
+
+  .first-display .left {
+    width: 400px;
+  }
+
+  .first-display h4 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .first-display p {
+    margin-bottom: 60px;
+  }
+
+  .features .wrapper {
+    width: 920px;
+  }
+
+  .features .left {
+    width: 400px;
+  }
+
+  .features__img-wrapper {
+    margin-top: 0;
+  }
+
+  .features img {
+    width: 100%;
+  }
+
+  .features .btn-eye1 {
+    left: 161px;
+    top: 83px;
+  }
+
+  .features .btn-eye2 {
+    left: 346px;
+    top: 333px;
+  }
+
+  .features .btn-eye3 {
+    right: 180px;
+    bottom: 218px;
+  }
+
+  .anwendungen .wrapper {
+    width: 900px;
+  }
+
+  .technologie1 .wrapper {
+    width: 920px;
+  }
+
+  .technologie1 .left {
+    width: 400px;
+  }
+
+  .technologie1 .right {
+    width: 450px;
+    margin: 0;
+  }
+
+  .technologie1 p {
+    text-align: center;
+  }
+
+  .technologie1 ul {
+    margin-top: 35px;
+  }
+
+  .technologie1 li {
+    width: 270px;
+  }
+
+  .produkte .wrapper {
+    width: 920px;
+  }
+
+  .produkte .equitron-pro img {
+    width: 100%;
+    margin-left: -69px;
+  }
+
+  .produkte .equitron-pro .line-wrapper {
+    left: 305px;
+    top: 8px;
+  }
+
+  .produkte .equitron-pro .line-wrapper span:last-child {
+    width: 230px;
+  }
+
+  .produkte .equitron-pro__text {
+    width: 500px;
+  }
+
+  .produkte .equitron-pro--mobile img {
+    position: relative;
+    width: 100%;
+    right: -155px;
+    top: -68px;
+  }
+
+  .technologie2 .wrapper {
+    width: 920px;
+  }
+
+  .technologie2__img-wrapper {
+    width: 900px;
+  }
+
+  .technologie2 .plus:first-child {
+    top: 206px;
+    left: 279px;
+  }
+
+  .technologie2 .plus:nth-child(2) {
+    top: 200px;
+    left: 410px;
+  }
+
+  .technologie2 .plus:nth-child(3) {
+    top: 200px;
+    left: 546px;
+  }
+
+  .technologie2 .plus:nth-child(4) {
+    top: 280px;
+    left: 341px;
+  }
+
+  .technologie2 .plus:nth-child(5) {
+    top: 273px;
+    left: unset;
+    right: 273px;
+  }
+
+  .technologie2 .plus:nth-child(6) {
+    top: 450px;
+    left: 276px;
+  }
+
+  .technologie2 .plus:nth-child(7) {
+    top: 444px;
+    left: 354px;
+  }
+
+  .technologie2 .plus:nth-child(8) {
+    top: 458px;
+    left: unset;
+    right: 265px;
+  }
+
+  .technologie2 .plus:nth-child(9) {
+    top: 452px;
+    left: unset;
+    right: 167px;
+  }
+
+  .kontaktiere-uns .wrapper {
+    width: 900px;
+  }
+
+  .footer .wrapper {
+    width: 920px;
+  }
+
+  .footer .main-logo {
+    width: 140px;
+  }
+
+  .footer .main-nav {
+    padding-top: 0;
+  }
+
+  .footer .soc-wrapper {
+    margin-top: 0;
+  }
+
+  .footer__top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .header .main-nav {
+    width: 500px;
+  }
+
+  .header .main-nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 919px) {
+  .wrapper {
+    width: 800px;
+  }
+
+  .first-display .wrapper {
+    width: 800px;
+  }
+
+  .first-display .left {
+    width: 350px;
+  }
+
+  .first-display h4 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .first-display p {
+    margin-bottom: 50px;
+  }
+
+  .first-display .main-form {
+    width: 350px;
+  }
+
+  .first-display ul {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .first-display li:first-child {
+    margin-right: 0;
+  }
+
+  .first-display li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .first-display li:last-child {
+    margin-right: 0;
+  }
+
+  .features .wrapper {
+    width: 800px;
+  }
+
+  .features .left {
+    width: 350px;
+  }
+
+  .features .right {
+    width: 350px;
+  }
+
+  .features .btn-eye1 {
+    left: 142px;
+    top: 64px;
+  }
+
+  .features .btn-eye2 {
+    left: 309px;
+    top: 276px;
+  }
+
+  .features .btn-eye3 {
+    right: 155px;
+    bottom: 184px;
+  }
+
+  .features p {
+    width: 100%;
+  }
+
+  .features__block {
+    width: 100%;
+  }
+
+  .anwendungen .wrapper {
+    width: 800px;
+  }
+
+  .technologie1 .wrapper {
+    width: 800px;
+  }
+
+  .technologie1 .left {
+    width: 100%;
+  }
+
+  .technologie1 .right {
+    width: 100%;
+  }
+
+  .produkte .wrapper {
+    width: 800px;
+  }
+
+  .produkte .equitron-pro .line-wrapper {
+    left: 259px;
+  }
+
+  .produkte .equitron-pro .line-wrapper span:last-child {
+    width: 200px;
+  }
+
+  .produkte .equitron-pro--mobile .line-wrapper {
+    left: 294px;
+  }
+
+  .produkte .equitron-pro--mobile .line-wrapper span:last-child {
+    width: 179px;
+  }
+
+  .technologie2 .wrapper {
+    width: 800px;
+  }
+
+  .technologie2__img-wrapper {
+    width: 800px;
+  }
+
+  .technologie2 .plus:first-child {
+    top: 188px;
+    left: 248px;
+  }
+
+  .technologie2 .plus:nth-child(2) {
+    top: 178px;
+    left: 354px;
+  }
+
+  .technologie2 .plus:nth-child(3) {
+    top: 179px;
+    left: 494px;
+  }
+
+  .technologie2 .plus:nth-child(4) {
+    top: 241px;
+    left: 303px;
+  }
+
+  .technologie2 .plus:nth-child(5) {
+    top: 245px;
+    left: unset;
+    right: 239px;
+  }
+
+  .technologie2 .plus:nth-child(6) {
+    top: 398px;
+    left: 243px;
+  }
+
+  .technologie2 .plus:nth-child(7) {
+    top: 391px;
+    left: 313px;
+  }
+
+  .technologie2 .plus:nth-child(8) {
+    top: 409px;
+    left: unset;
+    right: 235px;
+  }
+
+  .technologie2 .plus:nth-child(9) {
+    top: 383px;
+    left: unset;
+    right: 150px;
+  }
+
+  .kontaktiere-uns .wrapper {
+    width: 800px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .kontaktiere-uns .main-title {
+    margin-bottom: 35px;
+  }
+
+  .kontaktiere-uns {
+    height: auto;
+    background-position-y: -964px;
+  }
+
+  .footer .wrapper {
+    width: 800px;
+  }
+
+  .footer .main-nav {
+    width: 500px;
+  }
+
+  .footer .main-nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .wrapper {
+    width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .header .main-nav {
+    width: 450px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header .soc-wrapper {
+    margin: 0;
+    margin-top: 0;
+  }
+
+  .first-display .wrapper {
+    width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .first-display .left {
@@ -2094,7 +2816,12 @@ body {
             justify-content: center;
   }
 
+  .technologie2 .main-title {
+    width: 100%;
+  }
+
   .technologie2__text-wrapper {
+    width: 100%;
     margin-right: 0;
     margin-top: 25px;
     text-align: center;
@@ -2152,40 +2879,6 @@ body {
     right: 142px;
   }
 
-  .erfahrene-tierärzte .wrapper {
-    width: 768px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .erfahrene-tierärzte .main-title {
-    width: 100%;
-    text-align: center;
-  }
-
-  .erfahrene-tierärzte .right {
-    margin-right: 0;
-  }
-
-  .erfahrene-tierärzte {
-    margin-bottom: 100px;
-  }
-
-  .technologie-baner .wrapper {
-    width: 768px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 50px;
-  }
-
-  .technologie-baner .main-title {
-    margin-bottom: 50px;
-  }
-
-  .technologie-baner {
-    margin-bottom: 100px;
-  }
-
   .kontaktiere-uns .wrapper {
     width: 768px;
     -ms-flex-wrap: wrap;
@@ -2196,6 +2889,14 @@ body {
     margin-top: 0;
   }
 
+  .footer .wrapper {
+    width: 768px;
+  }
+
+  .footer .main-nav {
+    width: 460px;
+  }
+
   .footer__top {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2204,23 +2905,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    width: 360px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .main-title h2 {
-    font-size: 40px;
-    line-height: 54px;
-  }
-
-  .main-title span {
-    font-size: 18px;
-    line-height: 22px;
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .main-form {
@@ -2256,7 +2944,7 @@ body {
   }
 
   .main-nav {
-    position: relative;
+    position: absolute;
     padding: 0;
   }
 
@@ -2331,13 +3019,307 @@ body {
     display: block;
   }
 
-  .header {
-    margin-bottom: 40px;
+  .header .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
-  .header .soc-wrapper {
+  .first-display .wrapper {
+    width: 620px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .first-display .left {
+    width: 100%;
+  }
+
+  .first-display ul {
+    width: 420px;
+  }
+
+  .first-display .right {
+    margin-top: 35px;
+  }
+
+  .first-display .main-form {
+    width: 460px;
+  }
+
+  .features .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .features .left {
+    width: 100%;
+  }
+
+  .features .right {
+    width: 100%;
+  }
+
+  .features__block {
+    width: 397px;
+  }
+
+  .features .btn-eye1 {
+    left: 207px;
+    top: 110px;
+  }
+
+  .features .btn-eye2 {
+    left: 223px;
+    top: 236px;
+  }
+
+  .features .btn-eye3 {
+    right: 27px;
+    bottom: 87px;
+  }
+
+  .anwendungen .wrapper {
+    width: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .anwendungen ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .anwendungen li {
+    width: 60%;
+  }
+
+  .technologie1 .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .produkte .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .technologie2 .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .technologie2__img-wrapper {
+    display: none;
+  }
+
+  .erfahrene-tierärzte {
+    margin-bottom: 50px;
+  }
+
+  .erfahrene-tierärzte .wrapper {
+    width: 360px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .erfahrene-tierärzte .main-title {
     margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .erfahrene-tierärzte .main-title h2 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .erfahrene-tierärzte .main-title span {
+    width: 100%;
+  }
+
+  .erfahrene-tierärzte .right {
+    width: 100%;
     margin-top: 0;
+  }
+
+  .technologie-baner .wrapper {
+    width: 360px;
+  }
+
+  .technologie-baner ul {
+    width: 100%;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .technologie-baner li {
+    width: 100%;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .kontaktiere-uns .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .kontaktiere-uns .main-title span {
+    width: 100%;
+  }
+
+  .footer .wrapper {
+    width: 360px;
+  }
+
+  .footer__top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__end {
+    text-align: center;
+  }
+
+  .footer .main-nav {
+    display: none;
+  }
+
+  .footer .main-logo {
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .footer .soc-wrapper {
+    margin: 0;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .first-display .wrapper {
+    width: 520px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .first-display .left {
+    width: 100%;
+  }
+
+  .first-display ul {
+    width: 420px;
+  }
+
+  .first-display .right {
+    margin-top: 35px;
+  }
+
+  .first-display .main-form {
+    width: 460px;
+  }
+
+  .first-display .wrapper {
+    width: 480px;
+  }
+
+  .first-display .main-form {
+    width: 460px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .wrapper {
+    width: 480px;
+  }
+
+  .features .wrapper {
+    width: 480px;
+  }
+
+  .features .btn-eye1 {
+    left: 177px;
+    top: 97px;
+  }
+
+  .features .btn-eye2 {
+    left: 187px;
+    top: 236px;
+  }
+
+  .features .btn-eye3 {
+    right: 27px;
+    bottom: 87px;
+  }
+
+  .anwendungen .wrapper {
+    width: 460px;
+  }
+
+  .technologie1 .wrapper {
+    width: 480px;
+  }
+
+  .produkte .wrapper {
+    width: 480px;
+  }
+
+  .technologie2 .wrapper {
+    width: 480px;
+  }
+
+  .kontaktiere-uns .wrapper {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .wrapper {
+    width: 360px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-title h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .main-title span {
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .first-display .wrapper {
@@ -2380,12 +3362,16 @@ body {
     margin-bottom: 40px;
   }
 
-  .features {
-    margin-bottom: 50px;
+  .first-display .main-form {
+    width: 100%;
   }
 
   .features .wrapper {
     width: 360px;
+  }
+
+  .features {
+    margin-bottom: 50px;
   }
 
   .features .left {
@@ -2431,7 +3417,7 @@ body {
   }
 
   .anwendungen .wrapper {
-    width: 360px;
+    width: 340px;
   }
 
   .anwendungen .main-title {
@@ -2559,65 +3545,6 @@ body {
     display: none;
   }
 
-  .erfahrene-tierärzte {
-    margin-bottom: 50px;
-  }
-
-  .erfahrene-tierärzte .wrapper {
-    width: 360px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .erfahrene-tierärzte .main-title {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
-  .erfahrene-tierärzte .main-title h2 {
-    font-size: 50px;
-    line-height: 64px;
-  }
-
-  .erfahrene-tierärzte .main-title span {
-    width: 100%;
-  }
-
-  .erfahrene-tierärzte .right {
-    width: 100%;
-    margin-top: 0;
-  }
-
-  .technologie-baner .wrapper {
-    width: 360px;
-  }
-
-  .technologie-baner ul {
-    width: 100%;
-    height: auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 50px;
-  }
-
-  .technologie-baner li {
-    width: 100%;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .kontaktiere-uns .wrapper {
     width: 360px;
   }
@@ -2629,32 +3556,5 @@ body {
   .kontaktiere-uns {
     height: auto;
     padding-bottom: 50px;
-  }
-
-  .footer .wrapper {
-    width: 360px;
-  }
-
-  .footer__top {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .footer__end {
-    text-align: center;
-  }
-
-  .footer .main-nav {
-    display: none;
-  }
-
-  .footer .main-logo {
-    margin-bottom: 25px;
-  }
-
-  .footer .soc-wrapper {
-    margin: 0;
-    width: 50%;
   }
 }

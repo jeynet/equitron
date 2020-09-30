@@ -102,23 +102,108 @@
     bottom: 111px;
 	}
 
-	// media web features
+
+	// media web features 1280
 	@media screen and (max-width: 1600px){
 		.wrapper{
 			width: 1280px;
 			justify-content: space-around;
 		}
 	}
-	// media tablet features
-	@media screen and (max-width: 1279px){
+
+	// media web features 1024
+	@media screen and (max-width: 1279px) {
+		.wrapper{
+			width: 1024px;
+			justify-content: space-between;
+		}
+		.main-title{
+			h2{
+				width: 100%;
+			}
+			span{
+				width: 100%;
+			}
+		}
+		.left{
+			width: 550px;
+		}
+		.right{
+			width: 400px;
+		}
+	}
+
+
+
+	// media tablet features 920
+	@media screen and (max-width: 1023px){
+		.wrapper{
+			width: 920px;
+		}
+		.left{
+			width: 400px;
+		}
+		&__img-wrapper{
+			margin-top: 0;
+		}
+		img{
+			width: 100%;
+		}
+		.btn-eye1{
+			left: 161px;
+	    top: 83px;
+		}
+		.btn-eye2{
+			left: 346px;
+	    top: 333px;
+		}
+		.btn-eye3{
+			right: 180px;
+			bottom: 218px;
+		}
+	}
+
+	// media tablet features 800
+	@media screen and (max-width: 919px) {
+		.wrapper{
+			width: 800px;
+		}
+		.left{
+			width: 350px;
+		}
+		.right{
+			width: 350px;
+		}
+		.btn-eye1{
+			left: 142px;
+			top: 64px;
+		}
+		.btn-eye2{
+			left: 309px;
+			top: 276px;
+		}
+		.btn-eye3{
+			right: 155px;
+			bottom: 184px;
+		}
+		p{
+			width: 100%;
+		}
+		&__block{
+			width: 100%;
+		}
+	}
+
+	// media tablet features 768
+	@media screen and (max-width: 799px) {
 		.wrapper{
 			width: 768px;
 			flex-wrap: wrap;
 		}
 		.right{
 	    display: flex;
-    	flex-wrap: wrap;
-    	justify-content: center;
+	  	flex-wrap: wrap;
+	  	justify-content: center;
 		}
 		h2{
 			text-align: center;
@@ -129,13 +214,64 @@
 		}
 	}
 
-	// media mobile features
+
+
+	// media mobile features 520
 	@media screen and (max-width: 767px){
-		&{
-			margin-bottom: 50px;
+		.wrapper{
+			width: 520px;
+			justify-content: center;
 		}
+		.left{
+			width: 100%;
+		}
+		.right{
+			width: 100%;
+		}
+		&__block{
+    	width: 397px;
+		}
+		.btn-eye1{
+			left: 207px;
+			top: 110px;
+		}
+		.btn-eye2{
+			left: 223px;
+			top: 236px;
+		}
+		.btn-eye3{
+			right: 27px;
+	    bottom: 87px;
+		}
+	}
+
+	// media mobile features 480
+	@media screen and (max-width: 519px){
+		.wrapper{
+			width: 480px;
+		}
+		.btn-eye1{
+			left: 177px;
+			top: 97px;
+		}
+		.btn-eye2{
+			left: 187px;
+			top: 236px;
+		}
+		.btn-eye3{
+			right: 27px;
+	    bottom: 87px;
+		}
+	}
+
+	// media mobile features 360
+	@media screen and (max-width: 479px){
 		.wrapper{
 			width: 360px;
+		}
+
+		&{
+			margin-bottom: 50px;
 		}
 		.left{
 			width: 100%;
@@ -169,7 +305,6 @@
 			right: 28px;
 			top: 416px;
 		}
-
 	}
 
 

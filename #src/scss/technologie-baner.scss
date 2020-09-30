@@ -39,18 +39,27 @@
 			justify-content: space-around;
 		}
 	} 
+
 	// media tablet technologie-baner
 	@media screen and (max-width: 1279px){
 		.wrapper{
 			width: 768px;
 			flex-wrap: wrap;
 			padding-top: 50px;
+			padding-left: 25px;
+			padding-right: 25px;
 		}
 		.main-title{
 			margin-bottom: 50px;
 		}
 		&{
 			margin-bottom: 100px;
+		}
+		.main-title{
+			h2{
+				font-size: 48px;
+				line-height: 68px;
+			}
 		}
 	}
 

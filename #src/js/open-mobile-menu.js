@@ -7,6 +7,7 @@
 		if(!mainNav.classList.contains('main-nav-visible')){
 			mainNav.style.left = '0px';
 			mainNav.classList.add('main-nav-visible');
+			// mainNav.parentNode.style.display = 'block';
 			return false;
 		}
 

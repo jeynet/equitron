@@ -59,6 +59,7 @@
 			iconArrow.style.transform = 'rotate(-180deg)';
 			body.classList.add('custom-select__body--visible');
 			body.style.height = startHeight + 'px';
+			parent.style.height = (startHeight + 25) + 'px';
 			return false;
 		};
 
@@ -67,6 +68,8 @@
 			iconArrow.style.transform = 'rotate(0deg)';
 			body.style.height = 25 + 'px';
 			body.classList.remove('custom-select__body--visible');
+
+			parent.style.height = '50px';
 		};
 		hidden();
 
@@ -86,6 +89,7 @@
 		if(!mainNav.classList.contains('main-nav-visible')){
 			mainNav.style.left = '0px';
 			mainNav.classList.add('main-nav-visible');
+			// mainNav.parentNode.style.display = 'block';
 			return false;
 		}
 

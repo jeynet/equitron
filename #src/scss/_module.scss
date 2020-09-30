@@ -16,6 +16,9 @@
 	margin-left: auto;
 	margin-top: 14px;
 
+	a{
+	}
+
 	// media tablet soc-wrapper
 	@media screen and (max-width: 1279px){
 		&{
@@ -120,9 +123,11 @@
 .custom-select{
 	width: 289px;
 	border-bottom: 1px solid #000000;		
-	min-height: 50px;
 	margin-bottom: 31px;
 	position: relative;
+
+	height: 50px;
+	transition: height 250ms ease;
 	.custom-select__text{
 		display: block;
 		width: 100%;
@@ -143,6 +148,7 @@
 		// padding-bottom: 25px;
 		position: relative;
 		z-index: 2;
+		height: 50px;
 	}
 
 	&__body{
@@ -151,7 +157,7 @@
 		flex-wrap: wrap;
 		overflow-y: hidden;
 		position: relative;
-		// top: -25px;
+		top: -25px;
 		z-index: 1;
 		transition: height 300ms ease;
 	}
@@ -166,7 +172,7 @@
 	&__item--first{
 		padding-bottom: 10px;
 		&:hover{
-			color: $light-black;
+			color: $black;
 		}
 	}
 
@@ -199,6 +205,13 @@
 	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
+
+	transition: all 200ms ease;
+	&:hover{
+		transition: all 200ms ease;
+		background-color: $light-black;
+		border-color: $light-black;
+	}
 }
 
 .main-title{
@@ -644,6 +657,10 @@
 		line-height: 25px;
 		color: #fff;
 		text-decoration: none;
+		&:hover{
+			// color: $blue;
+			text-decoration: underline;
+		}
 	}
 
 
@@ -662,12 +679,12 @@
 	// media mobile main-nav
 	@media screen and (max-width: 767px){
 		&{
-			position: relative;
+			position: absolute;
 			padding: 0;
 		}
 		ul{
 			width: 100%;
-			
+			// height: 700px;
 			position: fixed;
 			left: -1500px;
 			top: 0;

@@ -6,16 +6,31 @@
 	width: 15px;
 	height: 13px;
 	background-image: url('../img/icon/tw.svg');
+	transition: background 300ms ease;
+	&:hover{
+		transition: background 300ms ease;
+		background-image: url('../img/icon/tw-active.svg');
+	}
 }
 .icon-in{
 	width: 14.2px;
 	height: 13.57px;
 	background-image: url('../img/icon/link.svg');
+	transition: background 300ms ease;
+	&:hover{
+		transition: background 300ms ease;
+		background-image: url('../img/icon/link-active.svg');
+	}
 }
 .icon-youtube{
 	height: 14.4375px;
 	width: 21px;
 	background-image: url('../img/icon/youtube.svg');
+	transition: background 300ms ease;
+	&:hover{
+		transition: background 300ms ease;
+		background-image: url('../img/icon/youtube-active.svg');
+	}
 }
 
 

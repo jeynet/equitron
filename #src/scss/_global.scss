@@ -24,15 +24,45 @@ html, body{
 	overflow-x: hidden;
 }
 
-// media web global
+
+
+// media web global 1280
 @media screen and (max-width: 1600px){
 	.wrapper{
 		width: 1280px;
+		box-sizing: border-box;
+		padding-left: 15px;
+		padding-right: 15px;
 		justify-content: space-around;
 	}
 }
-// media tablet global
-@media screen and (max-width: 1279px){
+
+// media web global 1024
+@media screen and (max-width: 1279px) {
+	.wrapper{
+		width: 1024px;
+		justify-content: space-between;
+	}
+}
+
+
+
+// media tablet global 920
+@media screen and (max-width: 1023px){
+	.wrapper{
+		width: 920px;
+	}
+}
+
+// media tablet global 800
+@media screen and (max-width: 919px) {
+	.wrapper{
+		width: 800px;
+	}
+}
+
+// media tablet global 768
+@media screen and (max-width: 799px) {
 	.wrapper{
 		width: 768px;
 		flex-wrap: wrap;
@@ -46,8 +76,25 @@ html, body{
 	}
 }
 
-// media mobile global
+
+
+// media mobile global 520
 @media screen and (max-width: 767px){
+	.wrapper{
+		width: 520px;
+		justify-content: center;
+	}
+}
+
+// media mobile global 480
+@media screen and (max-width: 519px){
+	.wrapper{
+		width: 480px;
+	}
+}
+
+// media mobile global 360
+@media screen and (max-width: 479px){
 	.wrapper{
 		width: 360px;
 		flex-wrap: wrap;

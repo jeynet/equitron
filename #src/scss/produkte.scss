@@ -86,15 +86,107 @@
 		top: -23px;
 	}
 
-	// media web produkte
+
+	// media web produkte 1280
 	@media screen and (max-width: 1600px){
 		.wrapper{
 			width: 1280px;
 			justify-content: space-around;
 		}
+
+		.equitron-pro{
+			&--mobile{
+				.line-wrapper{
+			    span:last-child{
+	        	width: 422px;
+			    }
+				}
+			}
+		}
+
 	}
-	// media tablet produkte
-	@media screen and (max-width: 1279px){
+
+	// media web produkte 1024
+	@media screen and (max-width: 1279px) {
+		.wrapper{
+			width: 1024px;
+			justify-content: space-between;
+		}
+
+		.equitron-pro{
+			&--mobile{
+				.line-wrapper{
+			    span:last-child{
+	        	width: 170px;
+			    }
+				}
+			}
+
+		}
+	}
+
+
+
+	// media tablet produkte 920
+	@media screen and (max-width: 1023px){
+		.wrapper{
+			width: 920px;
+		}
+		.equitron-pro{
+			img{
+				width: 100%;
+				margin-left: -69px;
+			}
+			.line-wrapper{
+				left: 305px;
+				top: 8px;
+				span:last-child{
+					width: 230px;
+				}
+			}
+			&__text{
+				width: 500px;
+			}
+			&--mobile{
+				img{
+					position: relative;
+					width: 100%;
+					right: -155px;
+					top: -68px;
+				}
+			}
+		}
+
+	}
+
+	// media tablet produkte 800
+	@media screen and (max-width: 919px) {
+		.wrapper{
+			width: 800px;
+		}
+		.equitron-pro{
+			.line-wrapper{
+		    left: 259px;
+				span:last-child{
+					width: 200px;
+				}
+			}
+			&--mobile{
+
+				.line-wrapper{
+			    left: 294px;
+			    span:last-child{
+		    		width: 179px;
+			    }
+				}
+			}
+
+		}
+
+	}
+
+	// media tablet produkte 768
+	@media screen and (max-width: 799px) {
 		.wrapper{
 			width: 768px;
 			flex-wrap: wrap;
@@ -127,8 +219,25 @@
 		}
 	}
 
-	// media mobile produkte
+
+
+	// media mobile produkte 520
 	@media screen and (max-width: 767px){
+		.wrapper{
+			width: 520px;
+			justify-content: center;
+		}
+	}
+
+	// media mobile produkte 480
+	@media screen and (max-width: 519px){
+		.wrapper{
+			width: 480px;
+		}
+	}
+
+	// media mobile produkte 360
+	@media screen and (max-width: 479px){
 		.wrapper{
 			width: 360px;
 			flex-wrap: wrap;
@@ -152,8 +261,6 @@
 		.elips{
 			left: -1195px;
 		}
-
 	}
-
 
 }
